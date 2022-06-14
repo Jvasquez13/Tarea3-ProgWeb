@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoneBook JV</title>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <script src="https://kit.fontawesome.com/a539cc141c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main_container">
+        <div class="record_input">
+            <h2>Agregar contactos</h2>
+            <div class="entry_form">
+                <form action="">
+
+                    <label for="Name">Nombre</label>
+                    <input type="text" id="name">
+
+                    <label for="Last Name">Apellido</label>
+                    <input type="text" id="last_name">
+
+                    <label for="Contact Number">Telefono</label>
+                    <input type="text" id="contact_number">
+                </form>
+
+                <span class="message"></span>
+                <div class="input_btns">
+                    <button type="submit" id="submit_btn">
+                         <span>
+                            <i class="fa fa-plus"></i>
+                        </span>Agregar
+                    
+                    <button type="button" id="cancel_btn">
+                        <span>
+                            <i class="fa fa-times"></i>
+                        </span>Cancelar
+                    </button>
+                    <button type="button" id="refresh_btn" onclick="location.reload()">
+                    <span>
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                        </span>Actualizar
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!--Display record  --->
+        <div class="record_display">
+            <h2>Contactos Disponibles: </h2>
+
+
+            <div class="record_container">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
